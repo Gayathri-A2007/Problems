@@ -1,0 +1,10 @@
+//To find area of a rectangle
+#include<stdio.h>
+int main(){
+    int l,b,area;
+    printf("Enter 2 values");
+    scanf("%d%d",&l,&b);
+    area=l*b;
+    printf("%d is the area of the given rectangle",area);
+    return 0;
+}
