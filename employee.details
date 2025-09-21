@@ -1,0 +1,18 @@
+//To create a program to input employee no and basic salary
+#include<stdio.h>
+int main(){
+   int net_pay,empno,bas_sal,ta,hra,da,pf;
+   printf("Enter empno and basic salary");
+   scanf("%d%d",&empno,&bas_sal);
+   ta=bas_sal*.05;
+   hra=bas_sal*.13;
+   da=bas_sal*.07;
+   pf=bas_sal*.14;
+   net_pay=(bas_sal+ta+da+hra)-pf;
+   printf("Emp no%d\n",empno);
+   printf("Basic salary=%d\n",bas_sal);
+   printf("TA=%d\n",ta);
+   printf("HRA=%d\n",hra);
+   printf("DA=%d\n",da);
+   printf("PF=%d\n",pf);
+}
