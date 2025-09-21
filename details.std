@@ -1,0 +1,15 @@
+//input student no and marks in 3 subjects and to find total and average
+#include<stdio.h>
+int main(){
+   int stno,cs_marks,mat_marks,eng_marks,total,avg;
+   printf("Enter stno,marks in cs,maths and eng");
+   scanf("%d%d%d%d",&stno,&cs_marks,&mat_marks,&eng_marks);
+   total=cs_marks+mat_marks+eng_marks;
+   avg=total/3;
+   printf("Stno=%d\n",stno);
+   printf("Computer marks=%d\n",cs_marks);
+   printf("Maths marks=%d\n",mat_marks);
+   printf("English marks=%d\n",eng_marks);
+   printf("Total=%d\n",total);
+   printf("Average=%d\n",avg);
+}
