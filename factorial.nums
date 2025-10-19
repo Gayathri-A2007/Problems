@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int num,i,f=1;
+    for(i=1;i<=num;i++)
+    {
+        f=f*i;
+    }
+    printf("the factorial of %d is %d",num,f);
+    return 0;
+}
