@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+    int num, i, remainder, sum;
+
+    printf("Armstrong numbers from 1 to 10 are: \n");
+
+    // Loop through numbers from 1 to 10
+    for (i = 1; i <= 10; ++i) {
+        sum = 0;
+        num = i;
+
+        // For single-digit numbers, the "sum of digits raised to the power of the number of digits"
+        // simplifies to the number itself (digit^1 = digit)
+        // Since all numbers from 1 to 9 have 1 digit, the sum will always equal the number.
+        
+        // This simplified logic works for the specific range of 1 to 10.
+        // For larger ranges, a more complex algorithm to count digits and use the pow() function is needed.
+        
+        if (num < 10) {
+            sum = num;
+        } else {
+            // For a 2-digit number like 10, 1^2 + 0^2 = 1, which is not 10.
+            // The logic here is simplified for this specific small range.
+            remainder = num % 10;
+            sum += remainder * remainder; // 0*0
+            num /= 10; // 1
+            remainder = num % 10; // 1
+            sum += remainder * remainder; // 1*1
+        }
+
+        // Check if the number is an Armstrong number
+        if (i == sum) {
+            printf("%d ", i);
+        }
+    }
+
+    return 0;
+}
