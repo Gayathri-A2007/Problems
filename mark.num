@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main(){
+    int m1,m2,m3;
+    if(m1>40&&m2>40&&m3>40)
+    {
+        printf("you are passed");
+    }
+    else
+    {
+        printf("you are failed")
+    }
+    return 0;
+}
